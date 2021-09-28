@@ -1,3 +1,9 @@
+## A React Component repo featuring useful, re-useable components designed to be be extracted and refactored as required
+### Components:
+- Load More (Add to top or bottom of list)
+- Fetch API (JSON)
+- Image Slider
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
