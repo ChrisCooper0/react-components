@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { LoadMore } from "./components/LoadMore";
-import JSONFetch from "./components/JSONFetch";
+import { LoadMore } from "./components/LoadMore/LoadMore";
+import JSONFetch from "./components/JsonFetch/JSONFetch";
 import { ImageSlider } from "./components/ImageSlider/ImageSlider";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
                 <Link to="/load-more">Load More</Link>
               </li>
               <li>
-                <Link to="/json-fetch">Fetch API (JSON)</Link>
+                <Link to="/json-fetch">Fetch API - JSON</Link>
               </li>
               <li>
                 <Link to="/image-slider">Image Slider/Carousel</Link>

@@ -22,7 +22,7 @@ export const LoadMore = () => {
         {items.slice(0, visible).map((item) => {
           return (
             <div className="card">
-              <p>{item.id}</p>
+              <p key={item.id}>{item.id}</p>
             </div>
           );
         })}
