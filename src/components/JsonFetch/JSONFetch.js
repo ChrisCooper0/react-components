@@ -3,14 +3,14 @@ import React, { useEffect, useState } from "react";
 const JSONFetch = () => {
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    async function getData() {
-      const response = await fetch("../dummydata.json");
-      const dataRes = await response.json();
-      setData(dataRes);
-      console.log(data, "getDatasyncFunction");
-    }
+  async function getData() {
+    const response = await fetch("../dummydata.json");
+    const dataRes = await response.json();
+    setData(dataRes);
+    console.log(data, "getDatasyncFunction");
+  }
 
+  useEffect(() => {
     getData();
     console.log(data, "useEffect");
   }, []);

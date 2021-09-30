@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { LoadMore } from "./components/LoadMore/LoadMore";
 import JSONFetch from "./components/JsonFetch/JSONFetch";
 import { ImageSlider } from "./components/ImageSlider/ImageSlider";
+import OutsideClick from "./components/OutsideClick/OutsideClick";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
               <li>
                 <Link to="/image-slider">Image Slider/Carousel</Link>
               </li>
+              <li>
+                <Link to="/outside-click">Outside click</Link>
+              </li>
             </ul>
           </nav>
           <Switch>
@@ -35,6 +39,9 @@ function App() {
             </Route>
             <Route path="/image-slider">
               <ImageSlider />
+            </Route>
+            <Route path="/outside-click">
+              <OutsideClick />
             </Route>
           </Switch>
         </div>
