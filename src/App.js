@@ -1,9 +1,9 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { LoadMore } from "./components/LoadMore/LoadMore";
-import JSONFetch from "./components/JsonFetch/JSONFetch";
 import { ImageSlider } from "./components/ImageSlider/ImageSlider";
 import OutsideClick from "./components/OutsideClick/OutsideClick";
+import Accordian from "./components/Accordian/Accordian";
 
 function App() {
   return (
@@ -24,13 +24,13 @@ function App() {
                   <Link to="/load-more">Load More</Link>
                 </li>
                 <li>
-                  <Link to="/json-fetch">Fetch API - JSON</Link>
-                </li>
-                <li>
                   <Link to="/image-slider">Image Slider</Link>
                 </li>
                 <li>
                   <Link to="/outside-click">Outside click</Link>
+                </li>
+                <li>
+                  <Link to="/accordian">Accordian</Link>
                 </li>
               </ul>
             </nav>
@@ -39,14 +39,14 @@ function App() {
               <Route path="/load-more">
                 <LoadMore />
               </Route>
-              <Route path="/json-fetch">
-                <JSONFetch />
-              </Route>
               <Route path="/image-slider">
                 <ImageSlider />
               </Route>
               <Route path="/outside-click">
                 <OutsideClick />
+              </Route>
+              <Route path="/accordian">
+                <Accordian />
               </Route>
             </Switch>
           </div>

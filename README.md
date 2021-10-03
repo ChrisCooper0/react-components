@@ -2,9 +2,9 @@
 Note: This app uses styled-components but these can be easily changed out for your preferred CSS styling method (CSS/Modules, Tailwind, Sass etc.)
 ### Components:
 - Load More (Add to top or bottom of list)
-- Fetch API with JSON (In progress)
 - Image Slider
 - Outside Click
+- Accordian
 
 
 # Getting Started with Create React App
