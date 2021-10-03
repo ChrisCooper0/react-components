@@ -1,6 +1,7 @@
 import { SliderData } from "./SliderData";
 import { useState, useEffect } from "react";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const ImageSlider = () => {
   let [current, setCurrent] = useState(0);
@@ -26,14 +27,18 @@ export const ImageSlider = () => {
   }
 
   return (
-    <section className="slider">
-      <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-      <img
-        src={SliderData[current].imageUrl}
-        alt={SliderData[current].imageAlt}
-        className="image"
-      />
-      <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-    </section>
+    <>
+      <Link to="/">Back</Link>
+
+      <section className="slider">
+        <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
+        <img
+          src={SliderData[current].imageUrl}
+          alt={SliderData[current].imageAlt}
+          className="image"
+        />
+        <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+      </section>
+    </>
   );
 };

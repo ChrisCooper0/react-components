@@ -54,3 +54,22 @@
     border-radius: 0;
   }
 }
+
+/* NAVBAR */
+
+.navbar {
+  padding: 0 10px;
+}
+
+.title {
+  color: rgb(102, 102, 102) !important;
+  text-decoration: none !important;
+}
+
+a {
+  color: grey;
+}
+
+a:nth-last-child(2) {
+  color: blue;
+}

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 // Change StyledContainer flex-wrap to wrap-reverse to add new items to the top
 const StyledContainer = styled.div`
@@ -54,15 +54,18 @@ export const LoadMore = () => {
   };
 
   return (
-    <StyledContainer>
-      {items.slice(0, visible).map((item) => {
-        return (
-          <StyledCard>
-            <StyledText key={item.id}>{item.id}</StyledText>
-          </StyledCard>
-        );
-      })}
-      <StyledButton onClick={loadItems}>Load More</StyledButton>
-    </StyledContainer>
+    <>
+      <Link to="/">Back</Link>
+      <StyledContainer>
+        {items.slice(0, visible).map((item) => {
+          return (
+            <StyledCard>
+              <StyledText key={item.id}>{item.id}</StyledText>
+            </StyledCard>
+          );
+        })}
+        <StyledButton onClick={loadItems}>Load More</StyledButton>
+      </StyledContainer>
+    </>
   );
 };

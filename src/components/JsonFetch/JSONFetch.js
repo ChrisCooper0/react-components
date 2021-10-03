@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const JSONFetch = () => {
   const [data, setData] = useState([]);
@@ -17,6 +18,7 @@ const JSONFetch = () => {
 
   return (
     <div>
+      <Link to="/">Back</Link>
       <p>In progress...</p>
     </div>
   );

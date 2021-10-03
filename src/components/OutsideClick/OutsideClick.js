@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
+import { Link } from "react-router-dom";
 
 const OutsideClick = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +11,7 @@ const OutsideClick = () => {
 
   return (
     <div>
+      <Link to="/">Back</Link>
       <OutsideClickHandler onOutsideClick={handleClick}>
         <button onClick={handleClick}>{isOpen ? "Close" : "Open"}</button>
       </OutsideClickHandler>
