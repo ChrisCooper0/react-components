@@ -14,6 +14,10 @@ function App() {
             <Link to="/" className="title">
               <h1>React Components</h1>
             </Link>
+            <p>
+              A collection of React components, designed to be reused and
+              refactored as needed
+            </p>
             <nav>
               <ul>
                 <li>
@@ -30,6 +34,7 @@ function App() {
                 </li>
               </ul>
             </nav>
+
             <Switch>
               <Route path="/load-more">
                 <LoadMore />

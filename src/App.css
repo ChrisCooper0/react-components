@@ -66,6 +66,10 @@
   text-decoration: none !important;
 }
 
+ul {
+  margin-top: 10px;
+}
+
 a {
   color: grey;
 }
