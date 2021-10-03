@@ -17,14 +17,7 @@ const JSONFetch = () => {
 
   return (
     <div>
-      <p>Test</p>
-      {/* {Object.entries(data).map((item) => (
-      <p key={item.id}>{item.name}</p>
-    ))} */}
-      {/* {data.map((item) => (
-      <p key={item.id}>{item.name}</p>
-    ))} */}
-      <p>Test</p>
+      <p>In progress...</p>
     </div>
   );
 };
