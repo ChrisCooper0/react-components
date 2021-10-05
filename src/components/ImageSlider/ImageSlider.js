@@ -2,6 +2,7 @@ import { SliderData } from "./SliderData";
 import { useState, useEffect } from "react";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import "./ImageSlider.css";
 
 export const ImageSlider = () => {
   let [current, setCurrent] = useState(0);
