@@ -4,6 +4,7 @@ import { LoadMore } from "./components/LoadMore/LoadMore";
 import { ImageSlider } from "./components/ImageSlider/ImageSlider";
 import OutsideClick from "./components/OutsideClick/OutsideClick";
 import Accordian from "./components/Accordian/Accordian";
+import { LocalStorage } from "./components/LocalStorage/LocalStorage";
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
                 <li>
                   <Link to="/accordian">Accordian</Link>
                 </li>
+                <li>
+                  <Link to="/local-storage">Local Storage</Link>
+                </li>
               </ul>
             </nav>
 
@@ -47,6 +51,9 @@ function App() {
               </Route>
               <Route path="/accordian">
                 <Accordian />
+              </Route>
+              <Route path="/local-storage">
+                <LocalStorage />
               </Route>
             </Switch>
           </div>

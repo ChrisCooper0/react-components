@@ -57,7 +57,9 @@ const Accordian = () => {
 
   return (
     <IconContext.Provider value={{ color: "#000", size: "20px" }}>
-      <Link to="/">Back</Link>
+      <Link className="link" to="/">
+        Back
+      </Link>
       <AccordianWrapper>
         <div>
           {Data.map((item, index) => {

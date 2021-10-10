@@ -17,6 +17,11 @@ a {
   color: grey;
 }
 
-a:nth-last-child(2) {
+.link {
   color: blue;
+}
+
+.card {
+  background-color: lightgoldenrodyellow;
+  padding: 5rem;
 }

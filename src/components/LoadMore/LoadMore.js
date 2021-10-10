@@ -55,7 +55,9 @@ export const LoadMore = () => {
 
   return (
     <>
-      <Link to="/">Back</Link>
+      <Link className="link" to="/">
+        Back
+      </Link>
       <StyledContainer>
         {items.slice(0, visible).map((item) => {
           return (

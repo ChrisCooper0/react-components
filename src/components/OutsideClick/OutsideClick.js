@@ -11,7 +11,9 @@ const OutsideClick = () => {
 
   return (
     <div>
-      <Link to="/">Back</Link>
+      <Link className="link" to="/">
+        Back
+      </Link>{" "}
       <OutsideClickHandler onOutsideClick={handleClick}>
         <button onClick={handleClick}>{isOpen ? "Close" : "Open"}</button>
       </OutsideClickHandler>

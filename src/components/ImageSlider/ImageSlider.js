@@ -29,8 +29,9 @@ export const ImageSlider = () => {
 
   return (
     <>
-      <Link to="/">Back</Link>
-
+      <Link className="link" to="/">
+        Back
+      </Link>
       <section className="slider">
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
         <img
