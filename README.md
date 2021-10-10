@@ -8,6 +8,7 @@ Note: This app uses styled-components but these can be easily changed out for yo
 - Image Slider
 - Outside Click
 - Accordian
+- Local Storage
 
 # Getting Started with Create React App
 
