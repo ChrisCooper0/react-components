@@ -25,7 +25,7 @@ const Wrap = styled.div`
   cursor: pointer;
 
   h1 {
-    padding: 2rem;
+    padding: 1rem;
     font-size: 1.5rem;
 
     span {
@@ -38,7 +38,7 @@ const Dropdown = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 20px;
   width: 100%;
   p {
     font-size: 1.25rem;
