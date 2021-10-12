@@ -5,6 +5,7 @@ import { ImageSlider } from "./components/ImageSlider/ImageSlider";
 import OutsideClick from "./components/OutsideClick/OutsideClick";
 import Accordian from "./components/Accordian/Accordian";
 import { LocalStorage } from "./components/LocalStorage/LocalStorage";
+import { EndlessScroll } from "./components/EndlessScroll/EndlessScroll";
 
 function App() {
   return (
@@ -36,9 +37,11 @@ function App() {
                 <li>
                   <Link to="/local-storage">Local Storage</Link>
                 </li>
+                <li>
+                  <Link to="/endless-scroll">Endless Scroll</Link>
+                </li>
               </ul>
             </nav>
-
             <Switch>
               <Route path="/load-more">
                 <LoadMore />
@@ -54,6 +57,9 @@ function App() {
               </Route>
               <Route path="/local-storage">
                 <LocalStorage />
+              </Route>
+              <Route path="/endless-scroll">
+                <EndlessScroll />
               </Route>
             </Switch>
           </div>
