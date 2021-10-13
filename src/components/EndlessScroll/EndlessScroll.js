@@ -12,11 +12,6 @@ export const Content = styled.div`
   overflow: auto;
 `;
 
-export const Loading = styled.div`
-  width: 200px;
-  margin: 20px auto;
-  text-align: center;
-`;
 const User = styled.div`
   display: flex;
   align-items: center;
@@ -31,7 +26,6 @@ const User = styled.div`
 export const EndlessScroll = () => {
   const [page, setPage] = useState(1);
   const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   const handleScroll = (e) => {
     const { scrollTop, clientHeight, scrollHeight } = e.currentTarget;
@@ -43,10 +37,8 @@ export const EndlessScroll = () => {
 
   useEffect(() => {
     const loadUsers = async () => {
-      setLoading(true);
       const newUsers = await getUsers(page);
       setUsers((prev) => [...prev, ...newUsers]);
-      setLoading(false);
     };
     loadUsers();
   }, [page]);
@@ -60,7 +52,6 @@ export const EndlessScroll = () => {
         {users &&
           users.map((user) => <User key={user.cell}>{user.email}</User>)}
       </Content>
-      {loading && <Loading>Loading...</Loading>}
     </>
   );
 };
