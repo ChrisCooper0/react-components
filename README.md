@@ -9,7 +9,7 @@ Note: This app uses styled-components but these can be easily changed out for yo
 - Outside Click
 - Accordian
 - Local Storage
-- Endless Scroll (In progress)
+- Endless Scroll
 - Pagination (In progress)
 
 Check back soon for more!
