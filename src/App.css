@@ -20,3 +20,23 @@ a {
 .link {
   color: blue;
 }
+
+/* Pagination */
+.pagination {
+  width: 500px;
+  display: flex;
+  margin: auto;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.pagination:hover {
+  cursor: pointer;
+}
+
+.active {
+  padding: 0 0.3rem;
+  border-radius: 45%;
+  background-color: lightgray;
+}

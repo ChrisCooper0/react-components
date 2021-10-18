@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -53,7 +53,7 @@ export const LocalStorage = () => {
   };
 
   return (
-    <div>
+    <>
       <Link className="link" to="/">
         Back
       </Link>
@@ -83,6 +83,6 @@ export const LocalStorage = () => {
         </table>
         <Button onClick={clear}>Reset </Button>
       </TableWrapper>
-    </div>
+    </>
   );
 };
