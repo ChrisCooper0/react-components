@@ -6,6 +6,7 @@ import OutsideClick from "./components/OutsideClick/OutsideClick";
 import Accordian from "./components/Accordian/Accordian";
 import { LocalStorage } from "./components/LocalStorage/LocalStorage";
 import { EndlessScroll } from "./components/EndlessScroll/EndlessScroll";
+import Pagination from "./components/Pagination/Pagination";
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
                 <li>
                   <Link to="/endless-scroll">Endless Scroll</Link>
                 </li>
+                <li>
+                  <Link to="/pagination">Pagination</Link>
+                </li>
               </ul>
             </nav>
             <Switch>
@@ -60,6 +64,9 @@ function App() {
               </Route>
               <Route path="/endless-scroll">
                 <EndlessScroll />
+              </Route>
+              <Route path="/pagination">
+                <Pagination />
               </Route>
             </Switch>
           </div>

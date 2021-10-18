@@ -10,7 +10,7 @@ Note: This app uses styled-components but these can be easily changed out for yo
 - Accordian
 - Local Storage
 - Endless Scroll
-- Pagination (In progress)
+- Pagination
 
 Check back soon for more!
 
