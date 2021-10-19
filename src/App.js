@@ -1,5 +1,11 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+  Link,
+} from "react-router-dom";
 import { LoadMore } from "./components/LoadMore/LoadMore";
 import { ImageSlider } from "./components/ImageSlider/ImageSlider";
 import OutsideClick from "./components/OutsideClick/OutsideClick";
@@ -24,25 +30,39 @@ function App() {
             <nav>
               <ul>
                 <li>
-                  <Link to="/load-more">Load More</Link>
+                  <NavLink activeClassName="selected" to="/load-more">
+                    Load More
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/image-slider">Image Slider</Link>
+                  <NavLink activeClassName="selected" to="/image-slider">
+                    Image Slider
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/outside-click">Outside click</Link>
+                  <NavLink activeClassName="selected" to="/outside-click">
+                    Outside click
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/accordian">Accordian</Link>
+                  <NavLink activeClassName="selected" to="/accordian">
+                    Accordian
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/local-storage">Local Storage</Link>
+                  <NavLink activeClassName="selected" to="/local-storage">
+                    Local Storage
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/endless-scroll">Endless Scroll</Link>
+                  <NavLink activeClassName="selected" to="/endless-scroll">
+                    Endless Scroll
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/pagination">Pagination</Link>
+                  <NavLink activeClassName="selected" to="/pagination">
+                    Pagination
+                  </NavLink>
                 </li>
               </ul>
             </nav>

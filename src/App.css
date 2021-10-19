@@ -25,6 +25,10 @@ a {
   color: blue;
 }
 
+.selected {
+  color: black;
+}
+
 /* Pagination */
 .pagination {
   width: 500px;
