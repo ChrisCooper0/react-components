@@ -52,7 +52,7 @@ const Pagination = () => {
       </Link>
       <Container>
         <Header>
-          <h2>Pokemon</h2>
+          <h2>Pokémon</h2>
           <img
             src="https://www.pngitem.com/pimgs/m/2-25193_pokemon-ball-transparent-background-transparent-background-pokeball-png.png"
             alt=""

@@ -1,7 +1,7 @@
 /* NAVBAR */
 
 .navbar {
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .title {
@@ -11,6 +11,10 @@
 
 ul {
   margin-top: 10px;
+}
+
+li {
+  list-style-type: none;
 }
 
 a {
