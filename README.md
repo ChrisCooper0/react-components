@@ -12,7 +12,6 @@ Note: This app uses styled-components but these can be easily changed out for yo
 - Endless Scroll
 - Pagination
 
-Check back soon for more!
 
 # Getting Started with Create React App
 
