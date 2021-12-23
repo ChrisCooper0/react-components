@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ca262036-41af-4293-bfc4-88bdd4f47d2e/deploy-status)](https://app.netlify.com/sites/react-component-cc/deploys)
+
 ### A React app featuring reuseable components designed to be be extracted and refactored as needed
 
 #### Components:
