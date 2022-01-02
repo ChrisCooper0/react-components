@@ -1,8 +1,8 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ca262036-41af-4293-bfc4-88bdd4f47d2e/deploy-status)](https://app.netlify.com/sites/react-component-cc/deploys)
+
 ### A React app featuring reuseable components designed to be be extracted and refactored as needed
 
-Note: This app uses styled-components but these can be easily changed out for your preferred CSS styling method (CSS/Modules, Tailwind, Sass etc.)
-
-### Components:
+#### Components:
 
 - Load More (Add to top or bottom of list)
 - Image Slider
@@ -12,7 +12,9 @@ Note: This app uses styled-components but these can be easily changed out for yo
 - Endless Scroll
 - Pagination
 
-Check back soon for more!
+**Note:** This app uses styled-components but these can be easily changed out for your preferred CSS styling method (CSS/Modules, Tailwind, Sass etc.)
+
+___
 
 # Getting Started with Create React App
 
