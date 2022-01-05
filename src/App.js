@@ -13,6 +13,7 @@ import Accordian from "./components/Accordian/Accordian";
 import { LocalStorage } from "./components/LocalStorage/LocalStorage";
 import { EndlessScroll } from "./components/EndlessScroll/EndlessScroll";
 import Pagination from "./components/Pagination/Pagination";
+import { FormExample } from "./components/Form/Form";
 
 function App() {
   return (
@@ -64,6 +65,11 @@ function App() {
                     Pagination
                   </NavLink>
                 </li>
+                <li>
+                  <NavLink activeClassName="selected" to="/form">
+                    Form (Formik)
+                  </NavLink>
+                </li>
               </ul>
             </nav>
             <Switch>
@@ -87,6 +93,9 @@ function App() {
               </Route>
               <Route path="/pagination">
                 <Pagination />
+              </Route>
+              <Route path="/form">
+                <FormExample />
               </Route>
             </Switch>
           </div>
