@@ -9,7 +9,41 @@ const StyledWrapper = styled.div`
   align-items: center;
 `;
 
-export const FormExample = () => {
+const StyledForm = styled.form`
+  padding: 40px 20px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: lightgrey;
+`;
+
+const StyledInput = styled.input`
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  margin-bottom: 20px;
+`;
+
+const StyledLabel = styled.label`
+  display: block;
+  margin-bottom: 2px;
+`;
+
+const StyledButton = styled.button`
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #fff;
+  &:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+`;
+
+const FormExample = () => {
   // Pass the useFormik() hook initial form values and a submit function that will
   // be called when the form is submitted
   const formik = useFormik({
@@ -18,8 +52,12 @@ export const FormExample = () => {
       lastName: "",
       email: "",
     },
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+    onSubmit: (values, { setSubmitting, resetForm }) => {
+      setTimeout(() => {
+        alert(JSON.stringify(values, null, 2));
+        setSubmitting(false);
+      }, 500);
+      resetForm();
     },
   });
 
@@ -29,12 +67,13 @@ export const FormExample = () => {
         Back
       </Link>
       <StyledWrapper>
-        <form onSubmit={formik.handleSubmit}>
-          <label htmlFor="firstName">First Name</label>
-          <input
+        <StyledForm onSubmit={formik.handleSubmit}>
+          <StyledLabel htmlFor="firstName">First Name</StyledLabel>
+          <StyledInput
             id="firstName"
             name="firstName"
             type="text"
+            required
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.firstName}
@@ -43,11 +82,12 @@ export const FormExample = () => {
             <div>{formik.errors.firstName}</div>
           ) : null}
 
-          <label htmlFor="lastName">Last Name</label>
-          <input
+          <StyledLabel htmlFor="lastName">Last Name</StyledLabel>
+          <StyledInput
             id="lastName"
             name="lastName"
             type="text"
+            required
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.lastName}
@@ -56,11 +96,12 @@ export const FormExample = () => {
             <div>{formik.errors.lastName}</div>
           ) : null}
 
-          <label htmlFor="email">Email Address</label>
-          <input
+          <StyledLabel htmlFor="email">Email Address</StyledLabel>
+          <StyledInput
             id="email"
             name="email"
             type="email"
+            required
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
@@ -68,10 +109,17 @@ export const FormExample = () => {
           {formik.touched.email && formik.errors.email ? (
             <div>{formik.errors.email}</div>
           ) : null}
-
-          <button type="submit">Submit</button>
-        </form>
+          {formik.isSubmitting ? (
+            <StyledButton type="submit" disabled>
+              Submit
+            </StyledButton>
+          ) : (
+            <StyledButton type="submit">Submit</StyledButton>
+          )}
+        </StyledForm>
       </StyledWrapper>
     </>
   );
 };
+
+export default FormExample;

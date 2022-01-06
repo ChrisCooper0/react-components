@@ -13,7 +13,7 @@ import Accordian from "./components/Accordian/Accordian";
 import { LocalStorage } from "./components/LocalStorage/LocalStorage";
 import { EndlessScroll } from "./components/EndlessScroll/EndlessScroll";
 import Pagination from "./components/Pagination/Pagination";
-import { FormExample } from "./components/Form/Form";
+import FormExample from "./components/Form/Form";
 
 function App() {
   return (
