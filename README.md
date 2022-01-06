@@ -11,10 +11,11 @@
 - Local Storage
 - Endless Scroll
 - Pagination
+- Form (Formik)
 
 **Note:** This app uses styled-components but these can be easily changed out for your preferred CSS styling method (CSS/Modules, Tailwind, Sass etc.)
 
-___
+---
 
 # Getting Started with Create React App
 
