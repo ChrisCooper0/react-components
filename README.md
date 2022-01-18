@@ -12,6 +12,7 @@
 - Endless Scroll
 - Pagination
 - Form (Formik)
+- Back To Top Button
 
 **Note:** This app uses styled-components but these can be easily changed out for your preferred CSS styling method (CSS/Modules, Tailwind, Sass etc.)
 

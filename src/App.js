@@ -14,6 +14,7 @@ import { LocalStorage } from "./components/LocalStorage/LocalStorage";
 import { EndlessScroll } from "./components/EndlessScroll/EndlessScroll";
 import Pagination from "./components/Pagination/Pagination";
 import FormExample from "./components/Form/Form";
+import BackToTopButton from "./components/BackToTop/BackToTop";
 
 function App() {
   return (
@@ -70,6 +71,11 @@ function App() {
                     Form (Formik)
                   </NavLink>
                 </li>
+                <li>
+                  <NavLink activeClassName="selected" to="/backtotop">
+                    Back To Top Button
+                  </NavLink>
+                </li>
               </ul>
             </nav>
             <Switch>
@@ -96,6 +102,9 @@ function App() {
               </Route>
               <Route path="/form">
                 <FormExample />
+              </Route>
+              <Route path="/backtotop">
+                <BackToTopButton />
               </Route>
             </Switch>
           </div>
