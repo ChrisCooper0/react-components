@@ -25,11 +25,14 @@ a {
   color: blue;
 }
 
-.selected {
-  color: black;
+.active {
+  border-radius: 3px;
+  background-color: rgb(134, 134, 134);
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Pagination */
+/* PAGINATION */
 .pagination {
   width: 500px;
   display: flex;
@@ -41,10 +44,4 @@ a {
 
 .pagination:hover {
   cursor: pointer;
-}
-
-.active {
-  padding: 0 0.3rem;
-  border-radius: 45%;
-  background-color: lightgray;
 }

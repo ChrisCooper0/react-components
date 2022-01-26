@@ -72,7 +72,7 @@ const Pagination = () => {
         pageRangeDisplayed={2}
         marginPagesDisplayed={1}
         containerClassName={"pagination"}
-        activeClassName={"active"}
+        activeClassName={"active-pagination"}
         onPageChange={(apiData) => fetchData(apiData.selected + 1)}
       />
     </>
