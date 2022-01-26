@@ -1,8 +1,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ca262036-41af-4293-bfc4-88bdd4f47d2e/deploy-status)](https://app.netlify.com/sites/react-component-cc/deploys)
 
-### A React app featuring reuseable components designed to be be extracted and refactored as needed
+### A React app featuring reuseable components, designed to be be extracted and refactored as needed
 
-#### Components:
+### Components
 
 - Load More (Add to top or bottom of list)
 - Image Slider
@@ -14,7 +14,10 @@
 - Form (Formik)
 - Back To Top Button
 
-**Note:** This app uses styled-components but these can be easily changed out for your preferred CSS styling method (CSS/Modules, Tailwind, Sass etc.)
+### Stack
+
+- React -  A JavaScript library for building user interfaces
+- Styled Components - CSS-in-JS styling. Styling is locally scoped to each component file. As such, this can be easily changed out for an alternative CSS methodology (CSS/Scss Modules or Tailwind)
 
 ---
 
