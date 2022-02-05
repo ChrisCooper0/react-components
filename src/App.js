@@ -15,6 +15,7 @@ import { EndlessScroll } from "./components/EndlessScroll/EndlessScroll";
 import Pagination from "./components/Pagination/Pagination";
 import FormExample from "./components/Form/Form";
 import BackToTopButton from "./components/BackToTop/BackToTop";
+import ImageFlick from "./components/ImageFlick/ImageFlick";
 
 function App() {
   return (
@@ -75,6 +76,11 @@ function App() {
                   Back To Top Button
                 </NavLink>
               </li>
+              <li>
+                <NavLink activeClassName="selected" to="/image-flick">
+                  Image Flick
+                </NavLink>
+              </li>
             </ul>
           </nav>
           <Routes>
@@ -87,6 +93,7 @@ function App() {
             <Route path="/pagination" element={<Pagination />} />
             <Route path="/form" element={<FormExample />} />
             <Route path="/backtotop" element={<BackToTopButton />} />
+            <Route path="/image-flick" element={<ImageFlick />} />
           </Routes>
         </Router>
       </div>

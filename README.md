@@ -13,10 +13,11 @@
 - Pagination
 - Form (Formik)
 - Back To Top Button
+- Image Flick
 
 ### Stack
 
-- React -  A JavaScript library for building user interfaces
+- React - A JavaScript library for building user interfaces
 - Styled Components - CSS-in-JS styling. Styling is locally scoped to each component file. As such, this can be easily changed out for an alternative CSS methodology (CSS/Scss Modules or Tailwind)
 
 ---
