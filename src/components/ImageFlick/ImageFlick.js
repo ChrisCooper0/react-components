@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -43,32 +43,31 @@ const StyledImage3 = styled.img`
 `;
 
 const ImageFlick = () => {
-  let image1 = document.querySelector(".image1");
-  let image2 = document.querySelector(".image2");
-  let image3 = document.querySelector(".image3");
-
-  let clickCount = 0;
+  const [clickCount, setClickCount] = useState(0);
+  const [image1zIndex, setImage1zIndex] = useState("1");
+  const [image2zIndex, setImage2zIndex] = useState("2");
+  const [image3zIndex, setImage3zIndex] = useState("3");
 
   const handleClick = () => {
     if (clickCount === 0) {
-      image1.style.zIndex = "3";
-      image2.style.zIndex = "1";
-      image3.style.zIndex = "2";
-      clickCount++;
+      setImage1zIndex("3");
+      setImage2zIndex("1");
+      setImage3zIndex("2");
+      setClickCount(clickCount + 1);
     } else if (clickCount === 1) {
-      image1.style.zIndex = "2";
-      image2.style.zIndex = "3";
-      image3.style.zIndex = "1";
-      clickCount++;
+      setImage1zIndex("2");
+      setImage2zIndex("3");
+      setImage3zIndex("1");
+      setClickCount(clickCount + 1);
     } else if (clickCount === 2) {
-      image1.style.zIndex = "1";
-      image2.style.zIndex = "2";
-      image3.style.zIndex = "3";
-      clickCount++;
+      setImage1zIndex("1");
+      setImage2zIndex("2");
+      setImage3zIndex("3");
+      setClickCount(clickCount + 1);
     }
 
-    if (clickCount === 3) {
-      clickCount = 0;
+    if (clickCount === 2) {
+      setClickCount(0);
     }
   };
 
@@ -83,16 +82,19 @@ const ImageFlick = () => {
           className="image1"
           src="https://images.pexels.com/photos/2805126/pexels-photo-2805126.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
           alt=""
+          style={{ zIndex: image1zIndex }}
         />
         <StyledImage2
           className="image2"
           src="https://images.pexels.com/photos/2662792/pexels-photo-2662792.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
           alt=""
+          style={{ zIndex: image2zIndex }}
         />
         <StyledImage3
           className="image3"
           src="https://images.pexels.com/photos/2363814/pexels-photo-2363814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
           alt=""
+          style={{ zIndex: image3zIndex }}
         />
       </StyledWrapper>
     </div>
