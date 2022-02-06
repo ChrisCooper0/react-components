@@ -63,10 +63,6 @@ const ImageFlick = () => {
       setImage1zIndex("1");
       setImage2zIndex("2");
       setImage3zIndex("3");
-      setClickCount(clickCount + 1);
-    }
-
-    if (clickCount === 2) {
       setClickCount(0);
     }
   };
