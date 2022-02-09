@@ -14,6 +14,7 @@
 - Form (Formik)
 - Back To Top Button
 - Image Flick
+- Star Rating
 
 ### Stack
 

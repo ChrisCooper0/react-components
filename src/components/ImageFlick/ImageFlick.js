@@ -72,7 +72,9 @@ const ImageFlick = () => {
       <Link className="link" to="/">
         Back
       </Link>
-      <StyledHeader>Click to cycle through images</StyledHeader>
+      <StyledHeader data-testid="header">
+        Click to cycle through images
+      </StyledHeader>
       <StyledWrapper className="wrapper" onClick={handleClick}>
         <StyledImage1
           className="image1"
