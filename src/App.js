@@ -17,6 +17,7 @@ import FormExample from "./components/Form/Form";
 import BackToTopButton from "./components/BackToTop/BackToTop";
 import ImageFlick from "./components/ImageFlick/ImageFlick";
 import StarRating from "./components/StarRating/StarRating";
+import Tabulated from "./components/Tabulated/Tabulated";
 
 function App() {
   return (
@@ -86,6 +87,11 @@ function App() {
                 Star Rating
               </NavLink>
             </li>
+            <li>
+              <NavLink activeClassName="selected" to="/tabs">
+                Tabs
+              </NavLink>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -109,6 +115,7 @@ function App() {
               />
             }
           />
+          <Route path="/tabs" element={<Tabulated />} />
         </Routes>
       </div>
     </Router>
