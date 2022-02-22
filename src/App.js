@@ -18,6 +18,7 @@ import BackToTopButton from "./components/BackToTop/BackToTop";
 import ImageFlick from "./components/ImageFlick/ImageFlick";
 import StarRating from "./components/StarRating/StarRating";
 import Tabulated from "./components/Tabulated/Tabulated";
+import ToastNotification from "./components/ToastNotification/ToastNotification";
 
 function App() {
   return (
@@ -92,6 +93,11 @@ function App() {
                 Tabs
               </NavLink>
             </li>
+            <li>
+              <NavLink activeClassName="selected" to="/toast-notifications">
+                Toast Notifications
+              </NavLink>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -116,6 +122,7 @@ function App() {
             }
           />
           <Route path="/tabs" element={<Tabulated />} />
+          <Route path="/toast-notifications" element={<ToastNotification />} />
         </Routes>
       </div>
     </Router>

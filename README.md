@@ -16,6 +16,7 @@
 - Image Flick
 - Star Rating
 - Tabs
+- Toast Notifications
 
 ### Stack
 
