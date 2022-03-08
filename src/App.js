@@ -6,12 +6,12 @@ import {
   NavLink,
   Link,
 } from "react-router-dom";
-import { LoadMore } from "./components/LoadMore/LoadMore";
-import { ImageSlider } from "./components/ImageSlider/ImageSlider";
+import LoadMore from "./components/LoadMore/LoadMore";
+import ImageSlider from "./components/ImageSlider/ImageSlider";
 import OutsideClick from "./components/OutsideClick/OutsideClick";
 import Accordian from "./components/Accordian/Accordian";
-import { LocalStorage } from "./components/LocalStorage/LocalStorage";
-import { EndlessScroll } from "./components/EndlessScroll/EndlessScroll";
+import LocalStorage from "./components/LocalStorage/LocalStorage";
+import EndlessScroll from "./components/EndlessScroll/EndlessScroll";
 import Pagination from "./components/Pagination/Pagination";
 import FormExample from "./components/Form/Form";
 import BackToTopButton from "./components/BackToTop/BackToTop";

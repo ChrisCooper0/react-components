@@ -23,7 +23,7 @@ const User = styled.div`
   background: lightskyblue;
 `;
 
-export const EndlessScroll = () => {
+const EndlessScroll = () => {
   const [page, setPage] = useState(1);
   const [users, setUsers] = useState([]);
 
@@ -55,3 +55,5 @@ export const EndlessScroll = () => {
     </>
   );
 };
+
+export default EndlessScroll;

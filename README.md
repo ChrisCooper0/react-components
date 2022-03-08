@@ -21,6 +21,7 @@
 ### Stack
 
 - React - A JavaScript library for building user interfaces
+- Storybook - UI tool to develop and view components (Including props) in isolation
 - Styled Components - CSS-in-JS styling. Styling is locally scoped to each component file. As such, this can be easily changed out for an alternative CSS methodology (CSS/Scss Modules or Tailwind)
 
 ---

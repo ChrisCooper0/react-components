@@ -4,7 +4,7 @@ import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./ImageSlider.css";
 
-export const ImageSlider = () => {
+const ImageSlider = () => {
   let [current, setCurrent] = useState(0);
   const arrayLength = SliderData.length;
 
@@ -44,3 +44,5 @@ export const ImageSlider = () => {
     </>
   );
 };
+
+export default ImageSlider;

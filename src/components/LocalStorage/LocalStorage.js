@@ -30,7 +30,7 @@ const TableWrapper = styled.div`
   align-items: center;
 `;
 
-export const LocalStorage = () => {
+const LocalStorage = () => {
   const [text, setText] = useState("");
 
   const [localText, setLocalText] = useState("");
@@ -86,3 +86,5 @@ export const LocalStorage = () => {
     </>
   );
 };
+
+export default LocalStorage;

@@ -39,7 +39,7 @@ const StyledButton = styled.button`
   font-size: 16px;
 `;
 
-export const LoadMore = () => {
+const LoadMore = () => {
   const [items, setItems] = useState([]);
   const [visible, setVisible] = useState(3);
 
@@ -71,3 +71,5 @@ export const LoadMore = () => {
     </>
   );
 };
+
+export default LoadMore;
