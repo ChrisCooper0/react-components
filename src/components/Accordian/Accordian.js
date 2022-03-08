@@ -13,7 +13,7 @@ const AccordianWrapper = styled.div`
   position: relative;
   margin-top: 20px;
   height: 70vh;
-  background: whitesmoke;
+  background: ${(props) => props.theme.background.light};
 `;
 
 const Wrap = styled.div`
