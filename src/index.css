@@ -5,3 +5,7 @@
   font-family: "Roboto Mono", monospace;
   scroll-behavior: smooth;
 }
+
+li {
+  list-style: none;
+}
