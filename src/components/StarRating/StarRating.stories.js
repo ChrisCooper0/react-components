@@ -4,6 +4,11 @@ import StarRating from "./StarRating";
 export default {
   title: "Components/StarRating",
   component: StarRating,
+  argTypes: {
+    rating: {
+      control: { type: "number", min: 0, max: 5, step: 0.5 },
+    },
+  },
 };
 
 const Template = ({ rating, fullColor, emptyColor }) => (

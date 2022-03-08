@@ -2,13 +2,12 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-// Change StyledContainer flex-wrap to wrap-reverse to add new items to the top
 const StyledContainer = styled.div`
   width: 100%;
   max-width: 1000px;
   margin: 20px auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: ${(props) => (props.loadTop ? "wrap-reverse" : "wrap")};
   justify-content: center;
 `;
 
@@ -16,8 +15,8 @@ const StyledCard = styled.div`
   width: 100%;
   max-width: 300px;
   padding: 20px;
-  color: #000;
-  background-color: lightblue;
+  background-color: ${(props) => props.theme.background.secondary};
+  color: ${(props) => props.theme.color.whitesmoke};
   margin: 20px 10px;
   border-radius: 5px;
 `;
@@ -33,13 +32,13 @@ const StyledButton = styled.button`
   outline: none;
   padding: 16px 12px;
   border-radius: 4px;
-  background-color: lightblue;
-  color: #000;
+  background-color: ${(props) => props.theme.background.secondary};
+  color: ${(props) => props.theme.color.whitesmoke};
   cursor: pointer;
   font-size: 16px;
 `;
 
-const LoadMore = () => {
+const LoadMore = ({ loadTop }) => {
   const [items, setItems] = useState([]);
   const [visible, setVisible] = useState(3);
 
@@ -58,7 +57,7 @@ const LoadMore = () => {
       <Link className="link" to="/">
         Back
       </Link>
-      <StyledContainer>
+      <StyledContainer loadTop={loadTop}>
         {items.slice(0, visible).map((item) => {
           return (
             <StyledCard>

@@ -101,7 +101,7 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route path="/load-more" element={<LoadMore />} />
+          <Route path="/load-more" element={<LoadMore loadTop={false} />} />
           <Route path="/image-slider" element={<ImageSlider />} />
           <Route path="/outside-click" element={<OutsideClick />} />
           <Route path="/accordian" element={<Accordian />} />
