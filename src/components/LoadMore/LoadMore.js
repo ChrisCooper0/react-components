@@ -15,7 +15,7 @@ const StyledCard = styled.div`
   width: 100%;
   max-width: 300px;
   padding: 20px;
-  background-color: ${(props) => props.theme.background.secondary};
+  background-color: ${(props) => props.theme.background.blue[500]};
   color: ${(props) => props.theme.color.whitesmoke};
   margin: 20px 10px;
   border-radius: 5px;
@@ -32,7 +32,7 @@ const StyledButton = styled.button`
   outline: none;
   padding: 16px 12px;
   border-radius: 4px;
-  background-color: ${(props) => props.theme.background.secondary};
+  background-color: ${(props) => props.theme.background.blue[500]};
   color: ${(props) => props.theme.color.whitesmoke};
   cursor: pointer;
   font-size: 16px;
