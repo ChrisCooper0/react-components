@@ -15,6 +15,7 @@
 - Back To Top Button
 - Image Flick
 - Star Rating
+- Splide
 - Tabs
 - Toast Notifications
 

@@ -19,6 +19,7 @@ import ImageFlick from "./components/ImageFlick/ImageFlick";
 import StarRating from "./components/StarRating/StarRating";
 import Tabulated from "./components/Tabulated/Tabulated";
 import ToastNotification from "./components/ToastNotification/ToastNotification";
+import Splider from "./components/Splider/Splider";
 
 function App() {
   return (
@@ -89,6 +90,11 @@ function App() {
               </NavLink>
             </li>
             <li>
+              <NavLink activeClassName="selected" to="/splide">
+                Splide
+              </NavLink>
+            </li>
+            <li>
               <NavLink activeClassName="selected" to="/tabs">
                 Tabs
               </NavLink>
@@ -123,6 +129,7 @@ function App() {
           />
           <Route path="/tabs" element={<Tabulated />} />
           <Route path="/toast-notifications" element={<ToastNotification />} />
+          <Route path="/splide" element={<Splider />} />
         </Routes>
       </div>
     </Router>
