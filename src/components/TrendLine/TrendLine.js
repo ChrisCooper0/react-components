@@ -1,8 +1,10 @@
 import React from "react";
 import Trend from "react-trend";
 import { Link } from "react-router-dom";
+import theme from "../../Theme";
 
 const TrendLine = ({ radius, width }) => {
+  console.log(theme.background.blue[100]);
   return (
     <>
       <Link className="link" to="/">
@@ -26,8 +28,8 @@ const TrendLine = ({ radius, width }) => {
         autoDrawEasing="ease-out"
         data={[0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0]}
         gradient={[
-          `${(props) => props.theme.background.blue[400]}`,
-          `${(props) => props.theme.background.blue[800]}`,
+          `${theme.background.blue[300]}`,
+          `${theme.background.blue[800]}`,
         ]}
         radius={radius}
         strokeWidth={width}
