@@ -1,9 +1,13 @@
 import React from "react";
 import Trend from "react-trend";
+import { Link } from "react-router-dom";
 
 const TrendLine = ({ radius, width }) => {
   return (
     <>
+      <Link className="link" to="/">
+        Back
+      </Link>
       <Trend
         smooth
         autoDraw
