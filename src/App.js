@@ -20,6 +20,7 @@ import StarRating from "./components/StarRating/StarRating";
 import Tabulated from "./components/Tabulated/Tabulated";
 import ToastNotification from "./components/ToastNotification/ToastNotification";
 import Splider from "./components/Splider/Splider";
+import TrendLine from "./components/TrendLine/TrendLine";
 
 function App() {
   return (
@@ -104,6 +105,11 @@ function App() {
                 Toast Notifications
               </NavLink>
             </li>
+            <li>
+              <NavLink activeClassName="selected" to="/trend">
+                Trend
+              </NavLink>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -130,6 +136,10 @@ function App() {
           <Route path="/tabs" element={<Tabulated />} />
           <Route path="/toast-notifications" element={<ToastNotification />} />
           <Route path="/splide" element={<Splider />} />
+          <Route
+            path="/trend"
+            element={<TrendLine radius={7.5} width={1.5} />}
+          />
         </Routes>
       </div>
     </Router>
