@@ -11,8 +11,8 @@ const theme = {
       800: "#2C5282",
       900: "#2A4365",
     },
-    primary: "#757687",
-    secondary: "#F1F1E6",
+    primary: "#2C5282",
+    secondary: "#90CDF4",
   },
   color: {
     black: "#000",
