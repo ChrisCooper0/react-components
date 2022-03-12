@@ -9,6 +9,18 @@ const StyledSlide = styled.div`
   height: 250px;
   width: 250px;
   margin: 0 auto;
+  border-radius: 5px;
+`;
+
+const Wrapper = styled.div`
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+`;
+
+const StyledHeader = styled.h2`
+  text-align: center;
+  margin-bottom: 2rem;
 `;
 
 const Splider = () => {
@@ -19,13 +31,24 @@ const Splider = () => {
       <Link className="link" to="/">
         Back
       </Link>
-      <Splide>
-        {[...Array(8)].map((_, index) => (
-          <SplideSlide key={index}>
-            <StyledSlide bgColor={index > 8 ? bgColor : bgColor + index} />
-          </SplideSlide>
-        ))}
-      </Splide>
+      <Wrapper>
+        <StyledHeader>Splide</StyledHeader>
+        <Splide
+          options={{
+            perPage: 4,
+            gap: "5rem",
+            arrows: false,
+            pagination: false,
+            drag: "free",
+          }}
+        >
+          {[...Array(8)].map((_, index) => (
+            <SplideSlide key={index}>
+              <StyledSlide bgColor={index > 8 ? bgColor : bgColor + index} />
+            </SplideSlide>
+          ))}
+        </Splide>
+      </Wrapper>
     </>
   );
 };
