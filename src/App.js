@@ -13,7 +13,7 @@ import Accordian from "./components/Accordian/Accordian";
 import LocalStorage from "./components/LocalStorage/LocalStorage";
 import EndlessScroll from "./components/EndlessScroll/EndlessScroll";
 import Pagination from "./components/Pagination/Pagination";
-import FormExample from "./components/Form/Form";
+import FormExample from "./components/Formik/Formik";
 import BackToTopButton from "./components/BackToTop/BackToTop";
 import ImageFlick from "./components/ImageFlick/ImageFlick";
 import StarRating from "./components/StarRating/StarRating";
@@ -21,6 +21,7 @@ import Tabulated from "./components/Tabulated/Tabulated";
 import ToastNotification from "./components/ToastNotification/ToastNotification";
 import Splider from "./components/Splider/Splider";
 import TrendLine from "./components/TrendLine/TrendLine";
+import ReactHookForm from "./components/ReactHookForm/ReactHookForm";
 
 function App() {
   return (
@@ -71,8 +72,13 @@ function App() {
               </NavLink>
             </li>
             <li>
-              <NavLink activeClassName="selected" to="/form">
+              <NavLink activeClassName="selected" to="/formik">
                 Form (Formik)
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="selected" to="/reacthookform">
+                Form (react-hook-form)
               </NavLink>
             </li>
             <li>
@@ -120,7 +126,8 @@ function App() {
           <Route path="/local-storage" element={<LocalStorage />} />
           <Route path="/endless-scroll" element={<EndlessScroll />} />
           <Route path="/pagination" element={<Pagination />} />
-          <Route path="/form" element={<FormExample />} />
+          <Route path="/formik" element={<FormExample />} />
+          <Route path="/reacthookform" element={<ReactHookForm />} />
           <Route path="/backtotop" element={<BackToTopButton />} />
           <Route path="/image-flick" element={<ImageFlick />} />
           <Route
