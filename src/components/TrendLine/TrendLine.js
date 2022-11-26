@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import theme from "../../Theme";
 
 const TrendLine = ({ radius, width }) => {
-  console.log(theme.background.blue[100]);
   return (
     <>
       <Link className="link" to="/">

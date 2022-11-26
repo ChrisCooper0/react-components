@@ -22,6 +22,7 @@ import ToastNotification from "./components/ToastNotification/ToastNotification"
 import Splider from "./components/Splider/Splider";
 import TrendLine from "./components/TrendLine/TrendLine";
 import ReactHookForm from "./components/ReactHookForm/ReactHookForm";
+import Stars from "./components/Stars/Stars";
 
 function App() {
   return (
@@ -116,6 +117,11 @@ function App() {
                 Trend
               </NavLink>
             </li>
+            <li>
+              <NavLink activeClassName="selected" to="/stars">
+                Stars
+              </NavLink>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -126,7 +132,7 @@ function App() {
           <Route path="/local-storage" element={<LocalStorage />} />
           <Route path="/endless-scroll" element={<EndlessScroll />} />
           <Route path="/pagination" element={<Pagination />} />
-          <Route path="/formik" element={<FormExample />} />
+          {/* <Route path="/formik" element={<FormExample />} /> */}
           <Route path="/reacthookform" element={<ReactHookForm />} />
           <Route path="/backtotop" element={<BackToTopButton />} />
           <Route path="/image-flick" element={<ImageFlick />} />
@@ -147,6 +153,7 @@ function App() {
             path="/trend"
             element={<TrendLine radius={7.5} width={1.5} />}
           />
+          <Route path="/stars" element={<Stars />} />
         </Routes>
       </div>
     </Router>

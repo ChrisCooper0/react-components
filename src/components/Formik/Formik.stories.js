@@ -1,11 +1,11 @@
-import React from "react";
-import FormExample from "./Form";
+// import React from "react";
+// import FormExample from "./Form";
 
-export default {
-  title: "Components/Form",
-  component: FormExample,
-};
+// export default {
+//   title: "Components/Form",
+//   component: FormExample,
+// };
 
-const Template = () => <FormExample />;
+// const Template = () => <FormExample />;
 
-export const Default = Template.bind({});
+// export const Default = Template.bind({});

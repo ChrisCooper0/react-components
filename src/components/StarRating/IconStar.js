@@ -3,7 +3,7 @@ import React from "react";
 const IconStar = ({
   width = "20",
   height = "20",
-  type = "full",
+  type,
   fullColor,
   emptyColor,
 }) => {

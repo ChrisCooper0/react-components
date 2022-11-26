@@ -61,13 +61,8 @@ const ReactHookForm = () => {
           <input {...register("name", { required: true })} />
           {errors.name && <p>Name is required</p>}
           <label htmlFor="email">Email</label>
-          <input
-            name="email"
-            type="email"
-            {...register("email", { required: true })}
-          />
+          <input type="email" {...register("email", { required: true })} />
           {errors.email && <p>Email is required</p>}
-
           <button type="submit">Submit</button>
         </StyledForm>
       </StyledWrapper>
