@@ -132,7 +132,7 @@ function App() {
           <Route path="/local-storage" element={<LocalStorage />} />
           <Route path="/endless-scroll" element={<EndlessScroll />} />
           <Route path="/pagination" element={<Pagination />} />
-          {/* <Route path="/formik" element={<FormExample />} /> */}
+          <Route path="/formik" element={<FormExample />} />
           <Route path="/reacthookform" element={<ReactHookForm />} />
           <Route path="/backtotop" element={<BackToTopButton />} />
           <Route path="/image-flick" element={<ImageFlick />} />

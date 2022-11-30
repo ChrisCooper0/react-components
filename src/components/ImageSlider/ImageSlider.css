@@ -2,15 +2,9 @@
 .slider {
   position: relative;
   height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .image {
@@ -53,17 +47,15 @@
 .left-arrow:hover,
 .right-arrow:hover {
   opacity: 0.8;
-  -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
 
 @media screen and (max-width: 1100px) {
   .left-arrow,
-  .right-arrow {
+.right-arrow {
     color: white;
   }
   .image {
     border-radius: 0;
   }
-}
-/*# sourceMappingURL=ImageSlider.css.map */
+}/*# sourceMappingURL=ImageSlider.css.map */

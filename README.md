@@ -12,12 +12,15 @@
 - Endless Scroll
 - Pagination
 - Form (Formik)
+- Form (react-hook-form)
 - Back To Top Button
 - Image Flick
 - Star Rating
 - Splide
 - Tabs
 - Toast Notifications
+- Trend
+- Stars (Rating and display)
 
 ### Stack
 

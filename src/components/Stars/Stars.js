@@ -37,7 +37,7 @@ const Stars = () => {
 
       setRatingText(ratingLabel[i]);
 
-      // Vibrate - Not iOs
+      // Vibrate - Not iOS
       const canVibrate = window.navigator.vibrate;
       if (canVibrate && i !== null) {
         navigator.vibrate(200);
