@@ -12,7 +12,7 @@ import OutsideClick from "./components/OutsideClick/OutsideClick";
 import Accordian from "./components/Accordian/Accordian";
 import LocalStorage from "./components/LocalStorage/LocalStorage";
 import EndlessScroll from "./components/EndlessScroll/EndlessScroll";
-import Pagination from "./components/Pagination/Pagination";
+import Pagination from "./components/RatingBreakdown/RatingBreakdown";
 import FormExample from "./components/Formik/Formik";
 import BackToTopButton from "./components/BackToTop/BackToTop";
 import ImageFlick from "./components/ImageFlick/ImageFlick";
@@ -23,6 +23,7 @@ import Splider from "./components/Splider/Splider";
 import TrendLine from "./components/TrendLine/TrendLine";
 import ReactHookForm from "./components/ReactHookForm/ReactHookForm";
 import Stars from "./components/Stars/Stars";
+import RatingBreakdown from "./components/RatingBreakdown/RatingBreakdown";
 
 function App() {
   return (
@@ -98,6 +99,11 @@ function App() {
               </NavLink>
             </li>
             <li>
+              <NavLink activeClassName="selected" to="/rating-breakdown">
+                Rating Breakdown
+              </NavLink>
+            </li>
+            <li>
               <NavLink activeClassName="selected" to="/splide">
                 Splide
               </NavLink>
@@ -146,6 +152,7 @@ function App() {
               />
             }
           />
+          <Route path="/rating-breakdown" element={<RatingBreakdown />} />
           <Route path="/tabs" element={<Tabulated />} />
           <Route path="/toast-notifications" element={<ToastNotification />} />
           <Route path="/splide" element={<Splider />} />
