@@ -10,15 +10,15 @@ flex-direction: column;
 `;
 
 const OuterBar = styled.div`
-  height: 10px;
-  width: 250px;
+  height: 11px;
+  width: 200px;
   outline: 1px solid black;
   border-radius: 5px;
-
+  overflow: hidden;
 `;
 const InnerBar = styled.div`
   background: lightcoral;
-  height: 10px;
+  height: 100%;
   width: ${(props) => `${props.width}%`};
 `;
 
