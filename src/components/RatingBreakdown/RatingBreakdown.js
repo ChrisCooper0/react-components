@@ -20,6 +20,7 @@ const InnerBar = styled.div`
   background: lightcoral;
   height: 100%;
   width: ${(props) => `${props.width}%`};
+  border-radius: 5px;
 `;
 
 const StyledWrapper = styled.div`
